@@ -14,6 +14,7 @@
     "@google/generative-ai": "^0.24.0",
     "@headlessui/react": "^2.2.0",
     "@tailwindcss/vite": "^4.0.17",
+    "openai": "^4.90.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
@@ -29,6 +30,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "http-proxy-middleware": "^3.0.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
