@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@codesandbox/sandpack-react": "^2.20.0",
+    "@google/generative-ai": "^0.24.0",
     "@headlessui/react": "^2.2.0",
     "@tailwindcss/vite": "^4.0.17",
     "react": "^19.0.0",
