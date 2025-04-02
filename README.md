@@ -8,6 +8,8 @@
 
 A web application that allows you to generate React components using an AI chat interface and view/edit them live in a Sandpack sandbox environment. Describe the component you need, and the AI will attempt to generate the code, which is then rendered instantly for preview.
 
+![image](https://github.com/user-attachments/assets/e480e92b-c1e2-4371-9e18-390578b1405f)
+
 ## ✨ Features
 
 *   **Live Sandbox Environment:** Uses `@codesandbox/sandpack-react` to provide an instant preview and code editor for the generated component.
