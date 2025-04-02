@@ -1,4 +1,4 @@
-# Tesslate Studio LIte
+# Tesslate Builder Lite
 
 [![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)

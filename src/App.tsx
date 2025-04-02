@@ -363,7 +363,7 @@ function App() {
       {}
       <div className="w-2/5 h-full flex flex-col bg-white shadow-lg">
         <div className="p-3 border-b border-neutral-200 bg-neutral-50 flex items-center justify-between flex-shrink-0">
-          <h2 className="text-base font-semibold text-neutral-700">Tesslate Studio Lite</h2>
+          <h2 className="text-base font-semibold text-neutral-700">Tesslate Builder Lite</h2>
           <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${
             isLoading ? 'bg-amber-100 text-amber-700 animate-pulse' : 'bg-emerald-100 text-emerald-700'
           }`}>
