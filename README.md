@@ -1,4 +1,4 @@
-# AI React Component Generator & Sandbox
+# Tesslate Studio LIte
 
 [![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)
@@ -8,18 +8,12 @@
 
 A web application that allows you to generate React components using an AI chat interface and view/edit them live in a Sandpack sandbox environment. Describe the component you need, and the AI will attempt to generate the code, which is then rendered instantly for preview.
 
-**(Strongly Recommended: Add a screenshot or GIF of the application in action here!)**
-`[Insert Screenshot/GIF Here]`
-
 ## ✨ Features
 
-*   **AI-Powered Component Generation:** Chat with an LLM to generate React components based on your descriptions.
 *   **Live Sandbox Environment:** Uses `@codesandbox/sandpack-react` to provide an instant preview and code editor for the generated component.
 *   **Real-time Preview:** See the generated component rendered immediately in the 'Preview' tab.
 *   **Integrated Code Editor:** View and modify the generated `Component.tsx` code directly in the 'Editor' tab.
 *   **Tailwind CSS Support:** The sandbox preview environment includes Tailwind CSS v4 via CDN, allowing generated components to use Tailwind utility classes.
-*   **Configurable LLM Backend:** Easily configure the LLM API endpoint, model name, API key, and generation parameters via environment variables.
-*   **Chat History Context:** Maintains chat history to provide context for follow-up requests.
 *   **Error Handling:** Displays API or code generation errors to the user.
 *   **Dependencies Included:** The sandbox automatically includes `react`, `react-dom`, `framer-motion`, and `@heroicons/react` for richer component possibilities.
 *   **Optional Proxy:** Built-in logic to route API requests through a local proxy (`/llm-proxy`) if the target API is not on localhost (requires separate proxy setup).
