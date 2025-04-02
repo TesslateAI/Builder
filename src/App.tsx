@@ -6,20 +6,17 @@ import {
   SandpackPreview,
 } from "@codesandbox/sandpack-react";
 
-// Define the structure for chat messages
 interface Message {
   role: 'user' | 'assistant';
   content: string;
 }
 
-// Helper to get environment variables
 const getEnvVar = (key: string, defaultValue: string | number | null = null): string | number | null => {
   const envValue =
     typeof import.meta !== 'undefined' && import.meta.env ? import.meta.env[key] : undefined;
   return envValue ?? defaultValue;
 };
 
-// --- Configuration ---
 const API_BASE_URL = getEnvVar('VITE_API_BASE_URL', 'http://localhost:1234/v1') as string;
 const API_KEY = getEnvVar('VITE_API_KEY', 'lm-studio') as string;
 const MODEL_NAME = getEnvVar('VITE_MODEL_NAME', 'tessa-t1-14b') as string;
@@ -38,8 +35,6 @@ const LLM_ENDPOINT = needsProxy
   ? `/llm-proxy/v1/chat/completions`
   : `${API_BASE_URL}/chat/completions`;
 
-// --- Sandpack Files ---
-// Sandpack index.html using Tailwind 4 Play CDN
 const sandpackIndexHTML = `<!DOCTYPE html>
 <html>
 <head>
@@ -59,7 +54,6 @@ const sandpackIndexHTML = `<!DOCTYPE html>
 </body>
 </html>`;
 
-// Sandpack App.tsx - Entry point inside Sandpack
 const sandpackAppCode = `import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import GeneratedComponent from './Component';
@@ -93,7 +87,6 @@ root.render(
 );
 `;
 
-// Default placeholder for the generated component
 const defaultGeneratedCode = `import React from 'react';
 
 export default function PlaceholderComponent() {
@@ -114,14 +107,15 @@ export default function PlaceholderComponent() {
 }
 `;
 
-// Sandpack package.json - Minimal dependencies
 const sandpackPackageJson = JSON.stringify({
   name: "ai-react-cdn-sandbox",
   version: "0.1.0",
   private: true,
   dependencies: {
     react: "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "framer-motion": "*",
+    "@heroicons/react": "*"
   },
   devDependencies: {
     "@types/react": "^18.2.0",
@@ -139,7 +133,6 @@ const sandpackPackageJson = JSON.stringify({
   },
 }, null, 2);
 
-// --- Main App Component ---
 function App() {
   const [prompt, setPrompt] = useState<string>('');
   const [messages, setMessages] = useState<Message[]>([]);
@@ -294,7 +287,7 @@ function App() {
 
   return (
     <div className="flex h-screen bg-zinc-100 text-sm font-sans">
-      {/* Left Column: Sandpack Area */}
+      {}
       <div className="w-3/5 h-full flex flex-col border-r border-neutral-300 bg-white">
         <div className="flex border-b border-neutral-200 flex-shrink-0">
           <button
@@ -367,10 +360,10 @@ function App() {
         </div>
       </div>
 
-      {/* Right Column: Chat Interface */}
+      {}
       <div className="w-2/5 h-full flex flex-col bg-white shadow-lg">
         <div className="p-3 border-b border-neutral-200 bg-neutral-50 flex items-center justify-between flex-shrink-0">
-          <h2 className="text-base font-semibold text-neutral-700">AI Component Chat</h2>
+          <h2 className="text-base font-semibold text-neutral-700">Tesslate Studio Lite</h2>
           <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${
             isLoading ? 'bg-amber-100 text-amber-700 animate-pulse' : 'bg-emerald-100 text-emerald-700'
           }`}>
