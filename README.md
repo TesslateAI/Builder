@@ -1,6 +1,3 @@
-Okay, here's a comprehensive README.md file for your AI React Component Generator project, based on the provided code.
-
-```markdown
 # AI React Component Generator & Sandbox
 
 [![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)](https://reactjs.org/)
@@ -164,23 +161,3 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 4.  Commit your changes (`git commit -m 'Add some feature'`).
 5.  Push to the branch (`git push origin feature/your-feature-name`).
 6.  Open a pull request.
-
-## 📄 License
-
-(Optional: Add your license information here, e.g., MIT License)
-
-```
-
-**Key improvements and explanations:**
-
-1.  **Clear Title and Badges:** Provides immediate context about the project's nature and technologies.
-2.  **Screenshot Placeholder:** Emphasizes the importance of visual representation.
-3.  **Detailed Features:** Lists the specific capabilities based on the code.
-4.  **Prerequisites:** Clearly states what's needed before setup.
-5.  **Step-by-Step Setup:** Guides the user through installation and running the app.
-6.  **Configuration Table:** Clearly explains each environment variable, its purpose, default value, and necessity. Explains the `VITE_` prefix requirement.
-7.  **How It Works Section:** Breaks down the request-response flow involving the user, app, LLM, and Sandpack.
-8.  **Usage Guide:** Provides practical steps and examples for using the application.
-9.  **Proxy Explanation:** Details the proxy logic, *crucially mentioning that the proxy server itself needs separate setup* and providing a Vite configuration example.
-10. **Standard Sections:** Includes Contribution guidelines and a License placeholder.
-11. **Markdown Formatting:** Uses headings, code blocks, lists, and bold text for readability.
